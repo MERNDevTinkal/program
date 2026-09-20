@@ -21,6 +21,12 @@ A comprehensive collection of Python programs covering fundamental data structur
   - Pattern printing with loops and ranges
   - Solutions from basic to intermediate level problems
 
+- **recursion.py** - Recursion and Backtracking Exercises
+  - Recursive sums, factorials, Fibonacci numbers, and powers
+  - Recursive binary search and digit operations
+  - Palindrome checking and recursive list processing
+  - Backtracking for subsequences and combination sums
+
 ## Features
 
 - ✅ Comprehensive linked list operations and implementations
@@ -49,6 +55,9 @@ python linked_List.py
 
 # Run programming exercises
 python program.py
+
+# Run recursion and backtracking exercises
+python recursion.py
 ```
 
 ## Requirements
@@ -61,6 +70,12 @@ python program.py
 - Linked Lists
 - Node-based structures
 - Pointer manipulation
+
+### Algorithms
+- Recursion and base cases
+- Binary search
+- Backtracking
+- Combination sum
 
 ### Programming Concepts
 - While loops
