@@ -1422,3 +1422,64 @@
 # print(lengthOfLongestSubstring("bbbbb"))     
 # print(lengthOfLongestSubstring("pwwkew"))   
 
+# merge sort
+
+# def mergeSortedLists(leftArray, rightArray):
+
+#     res = []
+
+#     i = 0
+#     j = 0
+
+#     # Compare elements from both arrays
+#     while i < len(leftArray) and j < len(rightArray):
+
+#         if leftArray[i] <= rightArray[j]:
+
+#             res.append(leftArray[i])
+#             i += 1
+
+#         else:
+
+#             res.append(rightArray[j])
+#             j += 1
+
+#     # Add remaining elements from leftArray
+#     while i < len(leftArray):
+
+#         res.append(leftArray[i])
+#         i += 1
+
+#     # Add remaining elements from rightArray
+#     while j < len(rightArray):
+
+#         res.append(rightArray[j])
+#         j += 1
+
+#     return res
+
+
+# def mergeSort(a):
+
+#     # Base case
+#     if len(a) <= 1:
+#         return a
+
+#     # Find middle
+#     mid = len(a) // 2
+
+#     # Sort left half
+#     left = mergeSort(a[:mid])
+
+#     # Sort right half
+#     right = mergeSort(a[mid:])
+
+#     # Merge both sorted halves
+#     return mergeSortedLists(left, right)
+
+
+# a = [8, 3, 5, 2, 9, 1]
+
+# result = mergeSort(a)
+
+# print(result)

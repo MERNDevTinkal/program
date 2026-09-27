@@ -1,6 +1,6 @@
 # Python Learning Projects
 
-A comprehensive collection of Python programs covering fundamental data structures and programming concepts. This repository is designed for learning and practicing core programming skills including linked lists, loops, iterations, and mathematical computations.
+A collection of Python examples covering fundamental data structures and programming concepts. This repository is designed for learning and practicing core programming skills including linked lists, binary trees, loops, iterations, and mathematical computations.
 
 ## Project Structure
 
@@ -21,15 +21,16 @@ A comprehensive collection of Python programs covering fundamental data structur
   - Pattern printing with loops and ranges
   - Solutions from basic to intermediate level problems
 
-- **recursion.py** - Recursion and Backtracking Exercises
-  - Recursive sums, factorials, Fibonacci numbers, and powers
-  - Recursive binary search and digit operations
-  - Palindrome checking and recursive list processing
-  - Backtracking for subsequences and combination sums
+- **tree.py** - Binary Tree Concepts and Exercises
+  - Tree terminology and binary tree structure
+  - Preorder, inorder, and postorder traversals
+  - Counting and summing nodes
+  - Finding the maximum value in a binary tree
 
 ## Features
 
 - ✅ Comprehensive linked list operations and implementations
+- ✅ Binary tree traversal and node calculation examples
 - ✅ Various loop patterns and iteration examples
 - ✅ Solutions to common programming problems
 - ✅ Well-commented, beginner-friendly code
@@ -56,9 +57,11 @@ python linked_List.py
 # Run programming exercises
 python program.py
 
-# Run recursion and backtracking exercises
-python recursion.py
+# Explore binary tree examples
+python tree.py
 ```
+
+Many examples in the data structure files are commented out. Uncomment an example before running it to see its output.
 
 ## Requirements
 
@@ -68,14 +71,14 @@ python recursion.py
 
 ### Data Structures
 - Linked Lists
+- Binary Trees
 - Node-based structures
 - Pointer manipulation
 
-### Algorithms
-- Recursion and base cases
-- Binary search
-- Backtracking
-- Combination sum
+### Tree Algorithms
+- Preorder, inorder, and postorder traversal
+- Counting and summing tree nodes
+- Finding a maximum value in a binary tree
 
 ### Programming Concepts
 - While loops

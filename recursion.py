@@ -206,3 +206,96 @@
 
 # print(combination_sum_once([2, 3, 2, 7, 4], 7))
 
+# N=6
+
+# board = [["." for _ in range(N)] for _ in range(N)]
+
+# result = []
+
+
+
+# def isSafe(row,col):
+
+#   # check for column:
+
+#   for r in range(row):
+
+#     if board[r][col]=="Q":
+
+#       return False
+
+
+
+#   # check for upper left diag:
+
+
+
+#   r=row-1
+
+#   c=col-1
+
+
+
+#   while r>=0 and c>=0:
+
+#     if board[r][c]=='Q':
+
+#       return False
+
+#     r-=1
+
+#     c-=1
+
+#   # check for upper right diag:
+
+#   r=row-1
+
+#   c=col+1
+
+#   while r>=0 and c<N:
+
+#     if board[r][c]=='Q':
+
+#       return False
+
+#     r-=1
+
+#     c+=1
+
+
+
+#   return True
+
+  
+
+
+
+# def nQueens(row):
+
+#   if row==N:
+
+#     currentAns= ["".join(rowNum) for rowNum in board]
+
+#     result.append(currentAns)
+
+#     return
+
+
+
+#   for col in range(N):
+
+#     if isSafe(row,col):
+
+#       board[row][col]="Q"
+
+#       nQueens(row+1)
+
+#       board[row][col]="."
+
+
+
+# nQueens(0)
+
+# for ans in result:
+
+#   print(ans)
