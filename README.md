@@ -24,13 +24,17 @@ A collection of Python examples covering fundamental data structures and program
 - **tree.py** - Binary Tree Concepts and Exercises
   - Tree terminology and binary tree structure
   - Preorder, inorder, and postorder traversals
-  - Counting and summing nodes
+  - Level-order traversal
+  - Counting and summing nodes and leaves
+  - Finding maximum depth, height, and diameter
   - Finding the maximum value in a binary tree
+  - Finding the left view of a binary tree
 
 ## Features
 
 - ✅ Comprehensive linked list operations and implementations
 - ✅ Binary tree traversal and node calculation examples
+- ✅ Recursive and breadth-first tree algorithms
 - ✅ Various loop patterns and iteration examples
 - ✅ Solutions to common programming problems
 - ✅ Well-commented, beginner-friendly code
@@ -77,8 +81,11 @@ Many examples in the data structure files are commented out. Uncomment an exampl
 
 ### Tree Algorithms
 - Preorder, inorder, and postorder traversal
+- Level-order traversal
 - Counting and summing tree nodes
-- Finding a maximum value in a binary tree
+- Counting leaf nodes
+- Finding tree depth, height, and diameter
+- Finding a maximum value and the left view of a binary tree
 
 ### Programming Concepts
 - While loops
@@ -90,10 +97,6 @@ Many examples in the data structure files are commented out. Uncomment an exampl
 ## Contributing
 
 Contributions are welcome! Feel free to fork this repository and submit pull requests with improvements or additional learning examples.
-
-## License
-
-This project is open source and available for educational purposes.
 
 ## Author
 
