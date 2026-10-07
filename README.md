@@ -1,6 +1,6 @@
-# Python Learning Projects
+# Programming Practice Projects
 
-A collection of Python examples covering fundamental data structures and programming concepts. This repository is designed for learning and practicing core programming skills including linked lists, binary trees, loops, iterations, and mathematical computations.
+A collection of Python and JavaScript examples for learning fundamental data structures, algorithms, and programming concepts.
 
 ## Project Structure
 
@@ -20,6 +20,16 @@ A collection of Python examples covering fundamental data structures and program
   - Mathematical computations (sum, multiplication tables)
   - Pattern printing with loops and ranges
   - Solutions from basic to intermediate level problems
+
+- **recursion.py** - Recursion and Backtracking Exercises
+  - Recursive sums, factorials, Fibonacci numbers, and binary search
+  - Recursive list and string problems
+  - Subsequences, combination sums, and other backtracking exercises
+
+- **practice.js** - JavaScript String and Array Practice
+  - String and array methods
+  - Iteration, filtering, mapping, and reducing
+  - Sorting, reversing, and removing duplicates
 
 - **tree.py** - Binary Tree Concepts and Exercises
   - Tree terminology and binary tree structure
@@ -61,15 +71,22 @@ python linked_List.py
 # Run programming exercises
 python program.py
 
+# Explore recursion and backtracking exercises
+python recursion.py
+
 # Explore binary tree examples
 python tree.py
+
+# Run JavaScript examples (requires Node.js)
+node practice.js
 ```
 
-Many examples in the data structure files are commented out. Uncomment an example before running it to see its output.
+Many examples are commented out. Uncomment an example before running its file to see its output.
 
 ## Requirements
 
 - Python 3.x or higher
+- Node.js (optional, for `practice.js`)
 
 ## Learning Topics Covered
 
@@ -93,6 +110,8 @@ Many examples in the data structure files are commented out. Uncomment an exampl
 - Conditional statements
 - Range functions
 - List operations
+- Recursion and backtracking
+- JavaScript string and array methods
 
 ## Contributing
 
