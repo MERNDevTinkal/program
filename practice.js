@@ -463,3 +463,219 @@
 
 // Find Missing Number
 
+// Find Missing Number
+
+// const arr = [8, 1, 7, 2, 3, 5, 6];
+// const n = arr.length+1
+// const expected = n*(n+1)/2
+// var total=0
+// for(i=0;i<arr.length;i++){
+//     total+=arr[i]
+// }
+// const m=expected-total
+// console.log(m)
+
+// Move Zeros to the End
+
+// const arr = [5,0,0,0, 1, 0, 3, 0,12,4,0,0,5];
+// let l=0
+
+// for(i=0;i<arr.length;i++){
+//     if(arr[i]!==0){
+//         [arr[i],arr[l]]=[arr[l],arr[i]]
+//         l+=1
+//     }
+// }
+// console.log(arr)
+
+// move 0 at begenning
+
+// const arr = [5,0,0,0, 1, 0, 3, 0,12,4,0,0,5];
+// let l=0
+// for(i=0;i<arr.length;i++){
+//     if(arr[i]==0){
+//         [arr[i],arr[l]]=[arr[l],arr[i]]
+//         l+=1
+//     }
+// }
+// console.log(arr)
+
+// Rotate Array Right by One Position
+
+// let arr = [1, 2, 3, 4, 5];
+// l=0
+// r=arr.length-1
+// t=arr[arr.length-1]
+// arr.unshift(t)
+// arr.pop()
+// console.log(arr)
+
+// Rotate Array Right by k Positions
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+// let k = 3;
+
+// k=k%arr.length
+
+// function reverse(l,r,arr){
+//     while(l<r){
+//         [arr[l],arr[r]]=[arr[r],arr[l]]
+//         r-=1
+//         l+=1
+//     }
+// }
+
+// reverse(0,arr.length-1,arr)
+// reverse(0,k-1,arr)
+// reverse(k,arr.length-1,arr)
+// console.log(arr)
+
+// Two Sum
+
+// const arr = [8, 7, 11,2, 15];
+// const target = 9;
+// let c=0
+// for(i=0;i<arr.length-1;i++){
+//     for(j=i+1;j<arr.length;j++){
+//         c=arr[i]+arr[j]
+//         if(c === target){
+//             console.log(arr[i],arr[j])
+//             break;
+//         }
+//     }
+// }
+
+// Check Anagram js is cas sensative t and T is not same so first convert in owercase 
+
+// const str1 = "tinkaal";
+// const str2 = "Tinkall";
+
+// let anagram = true
+// let f={}
+// if(str1.length != str2.length){
+//     anagram = false
+// }else{
+    
+//     for(i=0;i<str1.length;i++){
+//         if(f[str1[i]]){
+//             f[str1[i]]+=1
+//         }else{
+//             f[str1[i]]=1
+//         }
+//     }
+//     for(i=0;i<str2.length;i++){
+//          if(f[str2[i]]){
+//             f[str2[i]]-=1
+//         }else{
+//            anagram=false
+//            break
+//         }
+//     }
+// }
+// console.log(anagram)
+
+// // Find Unique Elements
+
+// let arr = [1,1, 2, 2, 3, 4, 4, 5, 6, 6];
+
+// // let newarr= new Set(arr)
+// // newarr=[...newarr]
+// // console.log(newarr)
+// let f={}
+// let u=[]
+// for (i=0;i<arr.length;i++){
+//     if(!f[arr[i]]){
+//         f[arr[i]]=true
+//         u.push(arr[i])
+//     }
+// }
+// console.log(u)
+
+// Find the Longest and Shortest Word
+
+// const str = "I love learning JavaScript programming";
+
+// const words = str.split(" ");
+// let longest = words[0];
+// let shortest = words[0];
+
+// for (let i = 1; i < words.length; i++) {
+//     if (words[i].length > longest.length) {
+//         longest = words[i];
+//     }
+
+//     if (words[i].length < shortest.length) {
+//         shortest = words[i];
+//     }
+// }
+
+// console.log("Longest:", longest);
+// console.log("Shortest:", shortest);
+
+// Capitalize the First Letter of Each Word
+
+// const str = "i love learning javascript";
+
+// const result = str
+//     .split(" ")
+//     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+//     .join(" ");
+
+// console.log(result);
+
+// Maximum sum subarray — Kadane's algorithm
+
+// const arr = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+
+// let currentSum = arr[0];
+// let maxSum = arr[0];
+
+// for (let i = 1; i < arr.length; i++) {
+//     currentSum = Math.max(arr[i], currentSum + arr[i]);
+//     maxSum = Math.max(maxSum, currentSum);
+// }
+
+// console.log(maxSum);
+
+// Maximum sum subarray of size k — Sliding Window
+
+// const arr = [2, 1, 5, 1, 3, 2];
+// const k = 3;
+
+// let windowSum = 0;
+
+// for (let i = 0; i < k; i++) {
+//     windowSum += arr[i];
+// }
+
+// let maxSum = windowSum;
+
+// for (let i = k; i < arr.length; i++) {
+//     windowSum = windowSum + arr[i] - arr[i - k];
+//     maxSum = Math.max(maxSum, windowSum);
+// }
+
+// console.log(maxSum);
+
+// Longest substring without repeating characters
+
+// function lengthOfLongestSubstring(str) {
+//     let left = 0;
+//     let maxLength = 0;
+//     const lastSeen = new Map();
+
+//     for (let right = 0; right < str.length; right++) {
+//         const char = str[right];
+
+//         if (lastSeen.has(char) && lastSeen.get(char) >= left) {
+//             left = lastSeen.get(char) + 1;
+//         }
+
+//         lastSeen.set(char, right);
+//         maxLength = Math.max(maxLength, right - left + 1);
+//     }
+
+//     return maxLength;
+// }
+
+// console.log(lengthOfLongestSubstring("abcabcbb"));
+
